@@ -56,7 +56,7 @@ case "$ACTIVE_CONFIRM" in
 
     ;;
   *)
-    curl -s url/to/config-tar/zabbix_agent2_passive.tar > zabbix_agent2_passive.tar
+    curl -s https://github.com/Finnmccarthy/zabbix-agent-conf/raw/main/zabbix_agent2_passive.tar > zabbix_agent2_passive.tar
     tar -xf zabbix_agent2_passive.tar > /dev/null 2> /dev/null
 
     cp zabbix_agent2_passive.conf /etc/zabbix/zabbix_agent2.conf

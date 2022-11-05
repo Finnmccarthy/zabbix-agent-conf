@@ -56,13 +56,13 @@ case "$ACTIVE_CONFIRM" in
 
     ;;
   *)
-    curl -s https://github.com/Finnmccarthy/zabbix-agent-conf/raw/main/zabbix_agent2_passive.tar > zabbix_agent2_passive.tar
-    tar -xf zabbix_agent2_passive.tar > /dev/null 2> /dev/null
+    curl -s https://raw.githubusercontent.com/Finnmccarthy/zabbix-agent-conf/main/zabbix_agent2_passive.conf > zabbix_agent2_passive.conf
+    #tar -xf zabbix_agent2_passive.tar > /dev/null 2> /dev/null
 
     cp zabbix_agent2_passive.conf /etc/zabbix/zabbix_agent2.conf
 
     rm -f zabbix_agent2_passive.conf
-    rm -f zabbix_agent2_passive.tar
+    #rm -f zabbix_agent2_passive.tar
   
     ;;
 esac
